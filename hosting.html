@@ -1,22 +1,49 @@
 ---
 layout: default
-title: Managed Private Hosting
-description: Fast, private hosting in France with unmetered 1 Gbps bandwidth, looked after personally by a senior engineer.
+title: Static Hosting for Power Users
+description: Fast, private static hosting in France for tech-savvy users. Deploy with rsync or rsync over TLS, unmetered 1 Gbps bandwidth, bespoke terms.
 ---
 
 <section class="hero hero--dark" style="background-image: linear-gradient(90deg, rgba(14, 19, 24, 0.95) 30%, rgba(14, 19, 24, 0.55)), url('/assets/banner-hosting.jpg')">
   <div class="wrap">
-    <span class="eyebrow">Hosting</span>
-    <h1 class="display">Private hosting, personally looked after</h1>
-    <p class="lead">Fast, secure European hosting for your websites and files, with <span class="highlight">unmetered 1 Gbps</span> bandwidth on our own battle-tested infrastructure, and an engineer you can actually reach.</p>
+    <span class="eyebrow">Hosting for power users</span>
+    <h1 class="display">Static hosting, deployed with rsync</h1>
+    <p class="lead">High-performance static content hosting and mirroring with <span class="highlight">unmetered 1 Gbps</span> bandwidth, for people who live on the command line. No dashboards, no build pipelines to learn: push your files with rsync, optionally over TLS, and they are live.</p>
     <div class="actions">
-      <a class="btn btn--light" href="#pricing">See plans <span class="arrow">&rarr;</span></a>
-      <a class="btn btn--outline-light" href="#contact">Talk to us</a>
+      <a class="btn btn--light" href="#deploy">How it works <span class="arrow">&rarr;</span></a>
+      <a class="btn btn--outline-light" href="#contact">Request a quote</a>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="deploy">
+  <div class="wrap deploy">
+    <div>
+      <span class="eyebrow">Deployment</span>
+      <h2 class="title">One command to publish</h2>
+      <p class="lead">rsync is the main way to update your hosting. It only transfers what changed, so even large sites and mirrors update in seconds.</p>
+      <ul class="checklist">
+        <li><strong>rsync</strong> for fast, incremental, scriptable deploys</li>
+        <li><strong>rsync over TLS</strong> to encrypt every transfer end to end</li>
+        <li>Fits any workflow: static site generators, CI jobs, cron or a shell alias</li>
+      </ul>
+    </div>
+
+    <figure class="terminal" aria-label="Example deployment commands">
+      <div class="terminal__bar"><span></span><span></span><span></span></div>
+<pre><code><span class="c"># Deploy with rsync</span>
+<span class="p">$</span> rsync -avz --delete ./public/ \
+    rsync://you@HOST/your-site/
+
+<span class="c"># Or encrypted, with rsync over TLS</span>
+<span class="p">$</span> rsync-ssl -avz --delete ./public/ \
+    rsync://you@HOST/your-site/</code></pre>
+      <figcaption>Endpoint and credentials are provided when your hosting is set up.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section section--ivory">
   <div class="wrap">
     <div class="section-head">
       <div>
@@ -26,6 +53,10 @@ description: Fast, private hosting in France with unmetered 1 Gbps bandwidth, lo
     </div>
 
     <div class="features">
+      <div class="feature">
+        <h3>Unmetered 1 Gbps</h3>
+        <p>No bandwidth caps and no overage bills, on battle-tested infrastructure that serves terabytes of data every day.</p>
+      </div>
       <div class="feature">
         <h3>European by default</h3>
         <p>Your data stays in France, under GDPR, on servers we operate ourselves. Need a presence in Asia? We also run a point of presence in Thailand.</p>
@@ -38,66 +69,30 @@ description: Fast, private hosting in France with unmetered 1 Gbps bandwidth, lo
         <h3>Private analytics</h3>
         <p>Real-time traffic insights powered by GoAccess, built from server logs. No cookies, no third-party trackers.</p>
       </div>
-      <div class="feature">
-        <h3>Effortless updates</h3>
-        <p>Deploy in seconds with rsync, or simply send us your changes and we will publish them for you.</p>
-      </div>
     </div>
   </div>
 </section>
 
-<section class="section section--ivory" id="pricing">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">Plans</span>
-        <h2 class="title">Clear pricing, human support on every plan</h2>
+<section class="section">
+  <div class="wrap bespoke">
+    <div>
+      <span class="eyebrow">Terms</span>
+      <h2 class="title">Bespoke, like everything we do</h2>
+      <p class="lead">There are no one-size-fits-all plans. Tell us about your project, your storage and traffic, and the level of support you need, and we will propose terms that fit.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Request a quote <span class="arrow">&rarr;</span></a>
       </div>
     </div>
 
-    <div class="plans">
-      <div class="plan">
-        <h3 class="plan__name">Essential</h3>
-        <p class="plan__for">For personal sites, portfolios and family projects.</p>
-        <p class="plan__price">$19.99<small>/month</small></p>
-        <ul>
-          <li>20 GB storage</li>
-          <li><span class="highlight">Unmetered 1 Gbps</span> bandwidth</li>
-          <li>Live private analytics</li>
-          <li>Email support from an engineer</li>
-        </ul>
-        <a class="btn btn--ghost" href="#contact">Get started</a>
+    <div class="bespoke__notes">
+      <div class="note">
+        <h3>Not a command-line person?</h3>
+        <p>This service is designed for tech-savvy users. If you would rather have it set up and looked after for you, our <a href="/consulting">consulting service</a> can take care of everything.</p>
       </div>
-
-      <div class="plan plan--featured">
-        <h3 class="plan__name">Business</h3>
-        <p class="plan__for">For SMEs whose website or downloads matter to the bottom line.</p>
-        <p class="plan__price">$99<small>/month</small></p>
-        <ul>
-          <li>100 GB storage</li>
-          <li><span class="highlight">Unmetered 1 Gbps</span> bandwidth</li>
-          <li>Live private analytics</li>
-          <li>Managed deployments and monitoring</li>
-          <li>Priority support with a direct line</li>
-        </ul>
-        <a class="btn btn--light" href="#contact">Get started</a>
-      </div>
-
-      <div class="plan">
-        <h3 class="plan__name">Bespoke</h3>
-        <p class="plan__for">For demanding workloads, mirrors and multi-site setups.</p>
-        <p class="plan__price">On request</p>
-        <ul>
-          <li>Architecture tailored to your needs</li>
-          <li><span class="highlight">Unmetered 1 Gbps</span> bandwidth</li>
-          <li>Multi-region hosting in Europe and Asia</li>
-          <li>Customized live analytics</li>
-          <li>24/7 dedicated support</li>
-        </ul>
-        <a class="btn" href="#contact">Contact us</a>
+      <div class="note">
+        <h3>Running a Free&nbsp;Software project?</h3>
+        <p>We run public mirrors, an OpenPGP keyserver and a Tor relay at <a href="https://cyberbits.eu/" target="_blank" rel="noopener">cyberbits.eu</a>. Ask us about preferential terms.</p>
       </div>
     </div>
-
-    <p class="plans__note muted">Running a Free&nbsp;Software project? We run public mirrors, an OpenPGP keyserver and a Tor relay at <a href="https://cyberbits.eu/" target="_blank" rel="noopener">cyberbits.eu</a>. Ask us about preferential terms.</p>
   </div>
 </section>
