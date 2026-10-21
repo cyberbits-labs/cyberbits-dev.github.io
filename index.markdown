@@ -33,17 +33,14 @@ layout: default
 
     <div class="pillars">
       <div class="pillar">
-        <span class="pillar__index">01</span>
         <h3>A senior expert, directly</h3>
         <p>One point of contact who knows your setup inside out. You never have to explain your problem twice, and you always know who is looking after you.</p>
       </div>
       <div class="pillar">
-        <span class="pillar__index">02</span>
         <h3>Discretion by default</h3>
         <p>Privacy is not an add-on. Your data stays in Europe on infrastructure we operate ourselves, and every engagement is handled in strict confidence.</p>
       </div>
       <div class="pillar">
-        <span class="pillar__index">03</span>
         <h3>Built to last</h3>
         <p>Proven, open technologies, properly documented. Clear advice in plain language, and no lock-in: you stay in control of what you own.</p>
       </div>
@@ -62,9 +59,9 @@ layout: default
     </div>
 
     <div class="services">
-      {% include service-card.html index="01" id="consulting" link="/consulting" description="Independent advice and hands-on engineering: security and privacy for private clients, cloud infrastructure, scaling and custom software for businesses." %}
+      {% include service-card.html id="consulting" link="/consulting" description="Independent advice and hands-on engineering: security and privacy for private clients, cloud infrastructure, scaling and custom software for businesses." %}
 
-      {% include service-card.html index="02" id="hosting" link="/hosting" description="Fast, private European hosting on our own battle-tested infrastructure, which serves terabytes of data every day, with an engineer you can actually reach." %}
+      {% include service-card.html id="hosting" link="/hosting" description="Fast, private European hosting on our own battle-tested infrastructure, which serves terabytes of data every day, with an engineer you can actually reach." %}
     </div>
   </div>
 </section>
