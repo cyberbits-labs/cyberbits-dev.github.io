@@ -31,14 +31,16 @@ description: Fast, private static hosting in France for tech-savvy users. Deploy
 
     <figure class="terminal" aria-label="Example deployment commands">
       <div class="terminal__bar"><span></span><span></span><span></span></div>
-<pre><code><span class="c"># Deploy with rsync</span>
-<span class="p">$</span> rsync -avz --delete ./public/ \
-    rsync://you@HOST/your-site/
+<pre><code><span class="p">$</span> domain=example.com
 
-<span class="c"># Or encrypted, with rsync over TLS</span>
+<span class="c"># Deploy with rsync</span>
+<span class="p">$</span> rsync -avz --delete ./public/ \
+    username@hosting.cyberbits.eu:${domain}
+
+<span class="c"># Or with rsync over TLS</span>
 <span class="p">$</span> rsync-ssl -avz --delete ./public/ \
-    rsync://you@HOST/your-site/</code></pre>
-      <figcaption>Endpoint and credentials are provided when your hosting is set up.</figcaption>
+    username@hosting.cyberbits.eu::${domain}</code></pre>
+      <figcaption>Your username is provided when your hosting is set up.</figcaption>
     </figure>
   </div>
 </section>
