@@ -76,13 +76,15 @@ layout: default
         <span class="eyebrow">Clients</span>
         <h2 class="title">Trusted for years</h2>
       </div>
-      <p class="lead">Our relationships are long-term by design. Some of the organisations we have supported for years:</p>
+      <p class="lead">Our relationships are long-term by design. Some of the organisations and projects we have supported for years:</p>
     </div>
 
     <div class="clients">
       {% include client-card.html domain="smartbox.com" description="Europe's leading experience-gift company, connecting people with more than 140,000 experiences across Europe." tags="enterprise,infrastructure,long-term" %}
 
       {% include client-card.html domain="dcr.farm" description="A Decred Voting Service Provider, where reliability, security and uptime are non-negotiable." tags="blockchain,security,high-availability" %}
+
+      {% include client-card.html domain="cyberbits.eu" description="Our own public infrastructure in Europe and Asia: package mirrors, an NTP server, an OpenPGP keyserver and a Tor relay, relied on by the open-source community." tags="in-house,open-source,europe-asia" %}
     </div>
   </div>
 </section>
@@ -102,7 +104,8 @@ layout: default
       </p>
 
       <p class="muted">
-        We have spent years designing and running infrastructure for businesses, decentralized services and Free&nbsp;Software projects worldwide.
+        We have spent years designing and running infrastructure for businesses, decentralized services and Free&nbsp;Software projects, from points of presence in France and Thailand.
+        Our public mirrors, keyserver and Tor relay are used every day by the open-source community: the same infrastructure, and the same care, that our clients get.
         We bring the same rigour to every client, whether that means protecting a family's privacy or preparing a company to scale.
         We take on a limited number of clients so that each one gets our full attention.
       </p>
