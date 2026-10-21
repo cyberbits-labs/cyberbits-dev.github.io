@@ -5,12 +5,15 @@ layout: default
 <section class="hero">
   <div class="wrap hero__grid">
     <div>
-      <span class="eyebrow">{{ site.company }} &middot; Since 2018</span>
-      <h1 class="display">Transform your IT infrastructure</h1>
-      <p class="lead">Unlock the full potential of your business with expert IT consulting services.</p>
+      <span class="eyebrow">Independent technology consultancy &middot; Since 2018</span>
+      <h1 class="display">Your technology, in trusted hands</h1>
+      <p class="lead">
+        Cyberbits is a boutique consultancy for discerning individuals and growing businesses.
+        You work directly with a senior engineer who knows your systems, answers your messages and takes responsibility. No call centres, no ticket queues.
+      </p>
       <div class="actions">
-        <a class="btn" href="#contact">Get started <span class="arrow">&rarr;</span></a>
-        <a class="btn btn--ghost" href="#services">Services</a>
+        <a class="btn" href="#contact">Start a conversation <span class="arrow">&rarr;</span></a>
+        <a class="btn btn--ghost" href="#services">Our services</a>
       </div>
     </div>
     <div class="hero__media">
@@ -20,20 +23,30 @@ layout: default
 </section>
 
 <section class="section section--ivory">
-  <div class="wrap statement">
-    <div>
-      <span class="eyebrow">What we do</span>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Why Cyberbits</span>
+        <h2 class="title">Expertise you can reach, discretion you can rely on</h2>
+      </div>
     </div>
-    <div class="statement__body">
-      <p>
-        We provide hosting services and tailored website development for individuals, <abbr title="Small and medium-sized enterprises">SMEs</abbr> and <a href="https://en.wikipedia.org/wiki/Free_software">Free&nbsp;Software</a> projects.
-      </p>
-      <p>
-        We specialize in decentralized hosting worldwide, mirroring services, DevOps and Linux system administration.
-      </p>
-      <p>
-        We also provide custom software development and consulting in cloud infrastructure, scaling, data analysis, etc.
-      </p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar__index">01</span>
+        <h3>A senior expert, directly</h3>
+        <p>One point of contact who knows your setup inside out. You never have to explain your problem twice, and you always know who is looking after you.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar__index">02</span>
+        <h3>Discretion by default</h3>
+        <p>Privacy is not an add-on. Your data stays in Europe on infrastructure we operate ourselves, and every engagement is handled in strict confidence.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar__index">03</span>
+        <h3>Built to last</h3>
+        <p>Proven, open technologies, properly documented. Clear advice in plain language, and no lock-in: you stay in control of what you own.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -42,36 +55,56 @@ layout: default
   <div class="wrap">
     <div class="section-head">
       <div>
-        <h2 class="title">Services</h2>
+        <span class="eyebrow">Services</span>
+        <h2 class="title">How we can help</h2>
       </div>
+      <p class="lead">From a one-off second opinion to looking after your infrastructure for the long term.</p>
     </div>
 
     <div class="services">
-      {% include service-card.html index="01" id="hosting" link="/hosting" description="We provide a hosting service on our battle-tested infrastructure serving terabytes of data every day." %}
+      {% include service-card.html index="01" id="consulting" link="/consulting" description="Independent advice and hands-on engineering: security and privacy for private clients, cloud infrastructure, scaling and custom software for businesses." %}
 
-      {% include service-card.html index="02" id="consulting" link="/consulting" description="We provide consulting in cloud infrastructure, scaling, data analysis and custom software development." %}
+      {% include service-card.html index="02" id="hosting" link="/hosting" description="Fast, private European hosting on our own battle-tested infrastructure, which serves terabytes of data every day, with an engineer you can actually reach." %}
     </div>
   </div>
 </section>
 
 <section class="section section--ivory">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Clients</span>
+        <h2 class="title">Trusted for years</h2>
+      </div>
+      <p class="lead">Our relationships are long-term by design. Some of the organisations we have supported for years:</p>
+    </div>
+
+    <div class="clients">
+      {% include client-card.html domain="smartbox.com" description="Europe's leading experience-gift company, connecting people with more than 140,000 experiences across Europe." tags="enterprise,infrastructure,long-term" %}
+
+      {% include client-card.html domain="dcr.farm" description="A Decred Voting Service Provider, where reliability, security and uptime are non-negotiable." tags="blockchain,security,high-availability" %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="wrap split">
     <div class="split__media">
       <img src="/assets/about-us.jpg" alt="" width="1080" height="769" loading="lazy">
     </div>
 
     <div>
-      <h2 class="title">About us</h2>
+      <span class="eyebrow">About us</span>
+      <h2 class="title">Deliberately small. Seriously experienced.</h2>
 
       <p>
-        We are an established IT consulting firm with a remote team of highly skilled professionals.
-        We provide comprehensive IT solutions to individuals and small businesses.
-        We love to help open-source software and privacy-respecting projects.
+        Cyberbits Labs was founded in 2018 on a simple idea: the people who depend on technology most deserve an expert who knows them, not an anonymous support desk.
       </p>
 
       <p class="muted">
-        Our expertise lies in delivering tailored IT strategies and technology infrastructure to help our clients stay ahead in today's rapidly evolving digital landscape.
-        We are committed to providing exceptional service, innovative solutions, and measurable results to drive our clients' success.
+        We have spent years designing and running infrastructure for businesses, decentralized services and Free&nbsp;Software projects worldwide.
+        We bring the same rigour to every client, whether that means protecting a family's privacy or preparing a company to scale.
+        We take on a limited number of clients so that each one gets our full attention.
       </p>
     </div>
   </div>

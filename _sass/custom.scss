@@ -725,21 +725,6 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
   ul { margin: 0; }
 }
 
-// Client cards (client-card.html)
-
-.client {
-  display: block;
-  padding: 2rem;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-decoration: none;
-
-  h2 { font-size: 1.75rem; }
-  kbd { margin-right: 0.5rem; color: var(--brass-light); }
-  &:hover { color: #fff; }
-}
-
 // 404
 
 .not-found {
@@ -748,3 +733,148 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 
   .display { font-size: clamp(5rem, 15vw, 9rem); color: var(--brass); }
 }
+
+// Pillars (home)
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(2rem, 4vw, 3.5rem);
+}
+
+.pillar {
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--ink);
+
+  h3 { font-size: 1.85rem; margin-bottom: 0.75rem; }
+  p { color: var(--muted); margin: 0; }
+}
+
+.pillar__index, .steps__index {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--brass);
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 860px) {
+  .pillars { grid-template-columns: 1fr; }
+}
+
+// Clients
+
+.clients {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(2rem, 4vw, 3rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.2s;
+
+  &__name {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  &__text { color: var(--muted); flex: 1; }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0 0;
+
+    span {
+      padding: 0.2rem 0.7rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+  }
+
+  &:hover { border-color: var(--brass-light); color: var(--text); }
+}
+
+@media (max-width: 760px) {
+  .clients { grid-template-columns: 1fr; }
+}
+
+// Audiences (consulting)
+
+.audiences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.audience {
+  padding: clamp(2rem, 4vw, 3rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+
+  h3 { font-size: clamp(2rem, 3.5vw, 2.5rem); margin-bottom: 0.75rem; }
+
+  ul { list-style: none; margin: 1.5rem 0 0; padding: 0; }
+
+  li {
+    position: relative;
+    padding: 0.85rem 0 0.85rem 1.75rem;
+    border-top: 1px solid var(--line);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1.6rem;
+      width: 0.8rem;
+      height: 1px;
+      background: var(--brass);
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .audiences { grid-template-columns: 1fr; }
+}
+
+// Steps (consulting)
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(2rem, 4vw, 3.5rem);
+
+  li { padding-top: 1.75rem; border-top: 1px solid var(--ink); }
+  h3 { font-size: 1.85rem; margin-bottom: 0.75rem; }
+  p { color: var(--muted); margin: 0; }
+}
+
+@media (max-width: 860px) {
+  .steps { grid-template-columns: 1fr; }
+}
+
+// Plan additions (hosting)
+
+.plan__for { color: var(--muted); font-size: 0.95rem; margin: 0; }
+.plan--featured .plan__for { color: var(--muted-dark); }
+.plans__note { margin: 2.5rem 0 0; text-align: center; }
+
+.contact__note { color: var(--muted-dark); font-size: 0.95rem; margin: 2rem 0 0; }

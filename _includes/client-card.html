@@ -1,9 +1,8 @@
-{% assign id = include.domain | replace: ".", "-" %}
-<a class="client" href="https://{{ include.domain }}/" target="_blank" style="background-image: linear-gradient(rgba(14, 19, 24, 0.8), rgba(14, 19, 24, 0.6)), url('/assets/clients/{{ id }}.png')">
-  <h2>{{ include.domain }}</h2>
-  <p>{{ include.description }}</p>
-  <p>
+<a class="client" href="https://{{ include.domain }}/" target="_blank" rel="noopener">
+  <span class="client__name">{{ include.domain }}</span>
+  <p class="client__text">{{ include.description }}</p>
+  <p class="client__tags">
     {% assign tags = include.tags | split: "," %}
-    {% for tag in tags %}<kbd>#{{ tag }}</kbd>{% endfor %}
+    {% for tag in tags %}<span>{{ tag }}</span>{% endfor %}
   </p>
 </a>
