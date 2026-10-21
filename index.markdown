@@ -61,7 +61,7 @@ layout: default
     <div class="services">
       {% include service-card.html id="consulting" link="/consulting" description="Independent advice and hands-on engineering: security and privacy for private clients, cloud infrastructure, scaling and custom software for businesses." %}
 
-      {% include service-card.html id="hosting" link="/hosting" description="Fast, private static hosting for tech-savvy users: deploy with rsync or rsync over TLS to our own battle-tested infrastructure, which serves terabytes of data every day." %}
+      {% include service-card.html id="hosting" link="/hosting" description="Fast, private static hosting for tech-savvy users: deploy with rsync over SSH or TLS to our own battle-tested infrastructure, which serves terabytes of data every day." %}
     </div>
   </div>
 </section>

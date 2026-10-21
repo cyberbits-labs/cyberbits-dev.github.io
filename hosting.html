@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Static Hosting for Power Users
-description: Fast, private static hosting in France for tech-savvy users. Deploy with rsync or rsync over TLS, unmetered 1 Gbps bandwidth, bespoke terms.
+description: Fast, private static hosting in France for tech-savvy users. Deploy with rsync over SSH or TLS, unmetered 1 Gbps bandwidth, bespoke terms.
 ---
 
 <section class="hero hero--dark" style="background-image: linear-gradient(90deg, rgba(14, 19, 24, 0.95) 30%, rgba(14, 19, 24, 0.55)), url('/assets/banner-hosting.jpg')">
   <div class="wrap">
     <span class="eyebrow">Hosting for power users</span>
     <h1 class="display">Static hosting, deployed with rsync</h1>
-    <p class="lead">High-performance static content hosting and mirroring with <span class="highlight">unmetered 1 Gbps</span> bandwidth, for people who live on the command line. No dashboards, no build pipelines to learn: push your files with rsync, optionally over TLS, and they are live.</p>
+    <p class="lead">High-performance static content hosting and mirroring with <span class="highlight">unmetered 1 Gbps</span> bandwidth, for people who live on the command line. No dashboards, no build pipelines to learn: push your files with rsync over SSH or TLS, and they are live.</p>
     <div class="actions">
       <a class="btn btn--light" href="#deploy">How it works <span class="arrow">&rarr;</span></a>
       <a class="btn btn--outline-light" href="#contact">Request a quote</a>
@@ -21,10 +21,10 @@ description: Fast, private static hosting in France for tech-savvy users. Deploy
     <div>
       <span class="eyebrow">Deployment</span>
       <h2 class="title">One command to publish</h2>
-      <p class="lead">rsync is the main way to update your hosting. It only transfers what changed, so even large sites and mirrors update in seconds.</p>
+      <p class="lead">rsync is the main way to update your hosting. It only transfers what changed, so even large sites and mirrors update in seconds, and every transfer is encrypted.</p>
       <ul class="checklist">
-        <li><strong>rsync</strong> for fast, incremental, scriptable deploys</li>
-        <li><strong>rsync over TLS</strong> to encrypt every transfer end to end</li>
+        <li><strong>rsync over SSH</strong> for fast, incremental, scriptable deploys</li>
+        <li><strong>rsync over TLS</strong> with the standard <code>rsync-ssl</code> client</li>
         <li>Fits any workflow: static site generators, CI jobs, cron or a shell alias</li>
       </ul>
     </div>
@@ -33,13 +33,13 @@ description: Fast, private static hosting in France for tech-savvy users. Deploy
       <div class="terminal__bar"><span></span><span></span><span></span></div>
 <pre><code><span class="p">$</span> domain=example.com
 
-<span class="c"># Deploy with rsync</span>
+<span class="c"># Deploy with rsync over SSH</span>
 <span class="p">$</span> rsync -avz --delete ./public/ \
-    username@hosting.cyberbits.eu:${domain}
+  username@hosting.cyberbits.eu:${domain}
 
 <span class="c"># Or with rsync over TLS</span>
 <span class="p">$</span> rsync-ssl -avz --delete ./public/ \
-    username@hosting.cyberbits.eu::${domain}</code></pre>
+  rsync://username@hosting.cyberbits.eu/${domain}/</code></pre>
       <figcaption>Your username is provided when your hosting is set up.</figcaption>
     </figure>
   </div>
