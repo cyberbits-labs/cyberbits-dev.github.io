@@ -3,17 +3,13 @@ layout: blog
 ---
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="d-flex justify-content-between">
-    <h2 itemprop="name headline">{{ page.title | escape }}</h2>
-    <div>
-      {% for category in page.categories %}
-      <a href="/posts/categories/#{{ category }}"><span class="badge text-bg-secondary">{{category}}</span></a>
-      {% endfor %}
-      <time class="badge text-bg-secondary" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: "%F" }}
-      </time>
-    </div>
-  </header>
+  <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+  <div class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+    {% for category in page.categories %}
+    <a class="tag" href="/posts/categories/#{{ category }}">{{ category }}</a>
+    {% endfor %}
+  </div>
 
   <div itemprop="articleBody">
     {{ content }}

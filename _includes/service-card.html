@@ -1,8 +1,6 @@
-<div class="col">
-  <a href="{{ include.link }}" class="text-decoration-none">
-    <div class="card p-2 text-bg-dark bg-img h-100" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url('/assets/service.jpg')">
-      <h2 class="card-title cursive">{{ include.id | capitalize }}</h2>
-      <p class="card-text">{{ include.description }}</p>
-    </div>
-  </a>
-</div>
+<a class="service" href="{{ include.link }}">
+  <span class="service__index">{{ include.index }}</span>
+  <h3 class="service__title">{{ include.id | capitalize }}</h3>
+  <p class="service__text">{{ include.description }}</p>
+  <span class="service__more">Learn more <span class="arrow">&rarr;</span></span>
+</a>

@@ -1,0 +1,57 @@
+<section class="section section--dark" id="contact">
+  <div class="wrap contact">
+    <div class="contact__aside">
+      <span class="eyebrow">Contact us</span>
+      <h2 class="title">Let's talk.</h2>
+      <p class="lead">
+        Send us a message here or email us.
+      </p>
+      <a class="contact__email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+
+    <div>
+      <script>
+        const sendForm = (e, form) => {
+          e.preventDefault();
+          const oops = (message) => {
+            let error = form.querySelector(".form__error");
+            if (!error) {
+              error = document.createElement("p");
+              error.className = "form__error";
+              error.setAttribute("role", "alert");
+              form.prepend(error);
+            }
+            error.textContent = `Oops! We couldn't send your message. Maybe try another way. (Error: ${message})`;
+          };
+          let params = new URLSearchParams();
+          const inputs = form.querySelectorAll(".form-control");
+          for (const input of inputs) { params.append(input.id, input.value); }
+          fetch(`${form.action}?${params}`, { method: form.method }).then((response) => {
+            if (response.ok) {
+              form.outerHTML = '<div class="form-success" role="status"><h3>Thank you!</h3><p>We\'ll be in touch soon.</p></div>';
+            } else {
+              oops(response.statusText);
+            }
+          }).catch((e) => oops(e));
+        }
+      </script>
+      <form class="form" action="https://api.{{ site.domain }}/v1/contact" method="get" onsubmit="sendForm(event, this)">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" autocomplete="email" required>
+        </div>
+        <div class="field field--full">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <div class="form__submit">
+          <button type="submit" class="btn btn--light">Send <span class="arrow">&rarr;</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

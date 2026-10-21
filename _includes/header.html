@@ -1,22 +1,14 @@
-<nav class="navbar navbar-expand-sm bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/assets/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-      <span class="fs-3">{{ site.title | escape }}</span>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/logo.png" alt="" width="28" height="28">
+      <span>{{ site.title | escape }}</span>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link" href="/hosting">Hosting</a></li>
-        <li class="nav-item"><a class="nav-link" href="/consulting">Consulting</a></li>
-      </ul>
-    </div>
-
-    <div class="d-none d-sm-block">
-      {%- include social.html -%}
-    </div>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/hosting"{% if page.url == "/hosting.html" %} aria-current="page"{% endif %}>Hosting</a>
+      <a href="/consulting"{% if page.url == "/consulting.html" %} aria-current="page"{% endif %}>Consulting</a>
+      <a class="btn" href="{% if page.contact == false %}/{% endif %}#contact">Contact us</a>
+    </nav>
   </div>
-</nav>
+</header>

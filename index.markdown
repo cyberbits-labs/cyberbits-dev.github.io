@@ -1,120 +1,78 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 ---
 
-<div id="banner" class="bg-img bg-banner" style="background-image: url('/assets/banner-index.jpg')">
-  <div class="container d-flex align-items-center justify-content-center text-center h-100">
+<section class="hero">
+  <div class="wrap hero__grid">
     <div>
-      <h1 class="display-1 cursive">Transform your IT infrastructure</h1>
-      <p class="fs-4">Unlock the full potential of your business with expert IT consulting services.</p>
-      <a class="btn btn-dark px-4 my-4" role="button" rel="nofollow" href="#content">Get started</a>
-      <div class="text-center fs-5 my-2">
-        <p>
-          We provide hosting services and tailored website development for individuals, <abbr title="Small and medium-sized enterprises">SMEs</abbr> and <a href="https://en.wikipedia.org/wiki/Free_software">Free&nbsp;Software</a> projects.
-        </p>
-
-        <p>
-          We specialize in decentralized hosting worldwide, mirroring services, DevOps and Linux system administration.
-        </p>
-
-        <p>
-          We also provide custom software development and consulting in cloud infrastructure, scaling, data analysis, etc.
-        </p>
+      <span class="eyebrow">{{ site.company }} &middot; Since 2018</span>
+      <h1 class="display">Transform your IT infrastructure</h1>
+      <p class="lead">Unlock the full potential of your business with expert IT consulting services.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Get started <span class="arrow">&rarr;</span></a>
+        <a class="btn btn--ghost" href="#services">Services</a>
       </div>
+    </div>
+    <div class="hero__media">
+      <img src="/assets/banner-index.jpg" alt="" width="1080" height="718">
     </div>
   </div>
-</div>
+</section>
 
-<div class="container">
-  <a aria-label="content" id="content" href="#"></a>
-  <div class="d-flex flex-column mb-3">
-    <div class="my-5 text-center">
-      <div class="row">
-        <div class="col">
-          <h1>Services</h1>
-
-          <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-2">
-            {% include service-card.html id="hosting" link="/hosting" description="We provide a hosting service on our battle-tested infrastructure serving terabytes of data every day." %}
-
-            {% include service-card.html id="consulting" link="/consulting" description="We provide consulting in cloud infrastructure, scaling, data analysis and custom software development." %}
-          </div>
-        </div>
-      </div>
+<section class="section section--ivory">
+  <div class="wrap statement">
+    <div>
+      <span class="eyebrow">What we do</span>
     </div>
-
-    <div class="my-5 d-none d-lg-block">
-      <div class="row align-items-center">
-        <div class="col me-5">
-          <img src="/assets/about-us.jpg" class="img-fluid rounded-5" alt="About us">
-        </div>
-
-        <div class="col">
-          <h1>About us</h1>
-
-          <p>
-            We are an established IT consulting firm with a remote team of highly skilled professionals.
-            We provide comprehensive IT solutions to individuals and small businesses.
-            We love to help open-source software and privacy-respecting projects.
-          </p>
-
-          <p>
-            Our expertise lies in delivering tailored IT strategies and technology infrastructure to help our clients stay ahead in today's rapidly evolving digital landscape.
-            We are committed to providing exceptional service, innovative solutions, and measurable results to drive our clients' success.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="pt-5">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h1 class="text-center text-sm-start">Contact us</h1>
-          <p>
-            Let's talk.
-            Send us a message here or
-            <a class="link-secondary" href="mailto:{{ site.email }}">email us</a>.
-          </p>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <script>
-            const sendForm = (e, form) => {
-              e.preventDefault();
-              const oops = (message) => alert(`Oops! We couldn't send your message. Maybe try another way.\n\nError: ${message}`);
-              let params = new URLSearchParams();
-              const inputs = form.querySelectorAll(".form-control");
-              for (const input of inputs) { params.append(input.id, input.value); }
-              fetch(`${form.action}?${params}`, { method: form.method }).then((response) => {
-                if (response.ok) {
-                  form.innerHTML = '<div class="alert alert-success" role="alert"><h1 class="alert-heading">Thank you!</h1><p>We\'ll be in touch soon.</p></div>';
-                } else {
-                  oops(response.statusText);
-                }
-              }).catch((e) => oops(e));
-            }
-          </script>
-          <form action="https://api.{{ site.domain }}/v1/contact" method="get" onsubmit="sendForm(event, this)" class="row">
-            <div class="col-12 col-md-6 mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" autocomplete="name" required>
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" autocomplete="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" required></textarea>
-            </div>
-            <div class="text-end">
-              <button type="submit" class="btn btn-dark px-4">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
+    <div class="statement__body">
+      <p>
+        We provide hosting services and tailored website development for individuals, <abbr title="Small and medium-sized enterprises">SMEs</abbr> and <a href="https://en.wikipedia.org/wiki/Free_software">Free&nbsp;Software</a> projects.
+      </p>
+      <p>
+        We specialize in decentralized hosting worldwide, mirroring services, DevOps and Linux system administration.
+      </p>
+      <p>
+        We also provide custom software development and consulting in cloud infrastructure, scaling, data analysis, etc.
+      </p>
     </div>
   </div>
-</div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2 class="title">Services</h2>
+      </div>
+    </div>
+
+    <div class="services">
+      {% include service-card.html index="01" id="hosting" link="/hosting" description="We provide a hosting service on our battle-tested infrastructure serving terabytes of data every day." %}
+
+      {% include service-card.html index="02" id="consulting" link="/consulting" description="We provide consulting in cloud infrastructure, scaling, data analysis and custom software development." %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--ivory">
+  <div class="wrap split">
+    <div class="split__media">
+      <img src="/assets/about-us.jpg" alt="" width="1080" height="769" loading="lazy">
+    </div>
+
+    <div>
+      <h2 class="title">About us</h2>
+
+      <p>
+        We are an established IT consulting firm with a remote team of highly skilled professionals.
+        We provide comprehensive IT solutions to individuals and small businesses.
+        We love to help open-source software and privacy-respecting projects.
+      </p>
+
+      <p class="muted">
+        Our expertise lies in delivering tailored IT strategies and technology infrastructure to help our clients stay ahead in today's rapidly evolving digital landscape.
+        We are committed to providing exceptional service, innovative solutions, and measurable results to drive our clients' success.
+      </p>
+    </div>
+  </div>
+</section>
