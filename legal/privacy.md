@@ -1,32 +1,67 @@
-<h1 class="text-center">Privacy Policy</h1>
+---
+layout: page
+title: Privacy Policy
+description: How Cyberbits Labs Ltd. collects, uses and protects personal data.
+---
 
-## 1. Information We Collect
+# Privacy Policy
 
-We collect information to provide better services to all of our users. The types of information we may collect include:
+Last updated: 22 October 2026
+{: .muted}
 
-- Personal Information: Name, email address, phone number, etc.
-- Non-Personal Information: Browser name, technical information about your means of connection to our site.
+Privacy is central to what we do. This policy explains what personal data Cyberbits Labs Ltd. ("Cyberbits", "we", "us") collects, why, and how long we keep it. In short: we collect as little as possible, we never sell it, and client data stays in the European Union.
 
-## 2. How We Use Information
+## 1. Who we are
 
-We use the information we collect for the following purposes:
+Cyberbits Labs Ltd. is the data controller for the personal data described in this policy. For any privacy question or request, email us at [{{ site.email }}](mailto:{{ site.email }}).
 
-- To provide and maintain our service.
-- To notify you about changes to our service.
-- To allow you to participate in interactive features of our service when you choose to do so.
+## 2. Information we collect
 
-## 3. Information Sharing and Disclosure
+**When you contact us.** If you use our contact form or email us, we receive your name, email address and the content of your message. We use it only to reply to you and, if you become a client, to deliver our services.
 
-We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties except as described in this Privacy Policy.
+**Server logs.** Like any web server, our servers (including the contact form and our hosting services) record technical information about each request, such as IP address, date and time, requested address and browser type. We use these logs only for troubleshooting, security and abuse handling. IP addresses are kept for a maximum of 14 days. Logs without IP addresses may be kept for statistical purposes. Only our system administrators can access log files.
 
-## 4. Data Security
+**This website.** This website is served by GitHub Pages, which processes visitors' IP addresses to deliver and secure the site. See the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) for details. We do not use any analytics, advertising or tracking services on this website, and all fonts and assets are served without third-party requests.
 
-We implement a variety of security measures to maintain the safety of your personal information.
+**Client data.** When we host content or work on systems for our clients, we process that data on their behalf and only on their instructions. A data processing agreement is available on request.
 
-## 5. Cookies
+## 3. Legal basis
 
-Our website uses "cookies" to enhance user experience. Users may choose to set their web browser to refuse cookies or to alert when cookies are being sent.
+We process personal data on the following grounds:
 
-## 6. Changes to This Privacy Policy
+- **Pre-contractual steps and contract performance**, to answer your enquiry and deliver the services you request.
+- **Legitimate interests**, to keep our services secure and reliable (server logs).
+- **Legal obligations**, where the law requires us to keep certain records.
 
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+## 4. Cookies
+
+This website does not use cookies.
+
+## 5. Sharing and disclosure
+
+We do not sell, rent or trade personal data. We only share it:
+
+- with the service providers needed to run our services, such as the network providers that connect our servers to the internet, which may keep their own connection logs;
+- when required by law or by a valid order from a competent authority.
+
+## 6. Where your data is stored
+
+Client data and data received through our contact form are stored exclusively in the European Union. Visitor data processed by GitHub when serving this website is covered by GitHub's own privacy statement.
+
+## 7. Data security
+
+We run our own infrastructure, apply the principle of least privilege, encrypt connections with modern TLS and keep our systems up to date. Access to personal data is restricted to the people who need it to do their job.
+
+## 8. How long we keep data
+
+- **Server logs with IP addresses:** 14 days at most.
+- **Enquiries:** as long as needed to handle your request and any resulting engagement.
+- **Client records:** for the duration of our engagement, and afterwards only as long as required by law.
+
+## 9. Your rights
+
+Under the GDPR you have the right to access, correct or delete your personal data, to restrict or object to its processing, and to receive it in a portable format. To exercise any of these rights, email us at [{{ site.email }}](mailto:{{ site.email }}). You also have the right to lodge a complaint with your local data protection authority.
+
+## 10. Changes to this policy
+
+We may update this policy from time to time. The latest version is always published on this page, with the date of the last update at the top.
