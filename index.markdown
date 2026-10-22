@@ -17,7 +17,11 @@ layout: default
       </div>
     </div>
     <div class="hero__media">
-      <img src="/assets/banner-index.jpg" alt="" width="1080" height="718">
+      <picture>
+        <!-- Hidden on phones; a blank placeholder stops the photo downloading there -->
+        <source media="(max-width: 560px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+        <img src="/assets/banner-index.jpg" alt="" width="1080" height="718">
+      </picture>
     </div>
   </div>
 </section>

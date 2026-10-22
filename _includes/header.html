@@ -9,6 +9,25 @@
       <a href="/consulting"{% if page.url == "/consulting.html" %} aria-current="page"{% endif %}>Consulting</a>
       <a href="/hosting"{% if page.url == "/hosting.html" %} aria-current="page"{% endif %}>Hosting</a>
       <a class="btn" href="{% if page.contact == false %}/{% endif %}#contact">Contact us</a>
+
+      <!-- Phones only: the links above collapse into this menu -->
+      <details class="site-menu">
+        <summary aria-label="Menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </summary>
+        <div class="site-menu__panel">
+          <a href="/consulting"{% if page.url == "/consulting.html" %} aria-current="page"{% endif %}>Consulting</a>
+          <a href="/hosting"{% if page.url == "/hosting.html" %} aria-current="page"{% endif %}>Hosting</a>
+          <a href="/posts/">Blog</a>
+        </div>
+      </details>
     </nav>
   </div>
+  <script>
+    // Close the phone menu when tapping anywhere outside it
+    document.addEventListener("click", (e) => {
+      const menu = document.querySelector(".site-menu[open]");
+      if (menu && !menu.contains(e.target)) menu.removeAttribute("open");
+    });
+  </script>
 </header>
