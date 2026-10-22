@@ -5,7 +5,7 @@ layout: blog
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <h1 itemprop="name headline">{{ page.title | escape }}</h1>
   <div class="post-meta">
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>
     {% for category in page.categories %}
     <a class="tag" href="/posts/categories/#{{ category }}">{{ category }}</a>
     {% endfor %}
