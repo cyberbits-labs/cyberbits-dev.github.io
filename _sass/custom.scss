@@ -575,6 +575,34 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
   ul, ol { padding-left: 1.25rem; margin: 0 0 1.25rem; }
   li { margin-bottom: 0.4rem; }
   a { text-decoration: underline; text-decoration-color: var(--brass-light); }
+
+  :not(pre) > code {
+    padding: 0.1em 0.35em;
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+  }
+
+  pre {
+    margin: 0 0 1.5rem;
+    padding: 1.1rem 1.25rem;
+    background: var(--ink);
+    color: #e6e9ec;
+    border-radius: 6px;
+    overflow-x: auto;
+    scrollbar-color: var(--ink-3) transparent;
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  // Rouge syntax highlighting, kept deliberately sparse
+  .highlight {
+    .c, .c1, .cm { color: var(--muted-dark); }
+    .nt, .nv, .s, .s1, .s2 { color: var(--brass-light); }
+  }
+
+  .post-list { padding: 0; }
+  .post-list h2 { margin-top: 0; }
 }
 
 .post-list {
