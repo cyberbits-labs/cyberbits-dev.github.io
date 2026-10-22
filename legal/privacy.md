@@ -21,7 +21,7 @@ Cyberbits Labs Ltd. is the data controller for the personal data described in th
 
 **Server logs.** Like any web server, our servers (including the contact form and our hosting services) record technical information about each request, such as IP address, date and time, requested address and browser type. We use these logs only for troubleshooting, security and abuse handling. IP addresses are kept for a maximum of 14 days. Logs without IP addresses may be kept for statistical purposes. Only our system administrators can access log files.
 
-**This website.** This website is served by GitHub Pages, which processes visitors' IP addresses to deliver and secure the site. See the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) for details. We do not use any analytics, advertising or tracking services on this website, and all fonts and assets are served without third-party requests.
+**This website.** This website is hosted on GitHub Pages and delivered through Cloudflare's network, which protects it against attacks and abuse. Both providers process technical request data, including visitors' IP addresses, to deliver and secure the site. Requests sent through our contact form also pass through Cloudflare before reaching our servers. See the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) and the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/) for details. We do not use any analytics, advertising or tracking services on this website.
 
 **Client data.** When we host content or work on systems for our clients, we process that data on their behalf and only on their instructions. A data processing agreement is available on request.
 
@@ -35,18 +35,18 @@ We process personal data on the following grounds:
 
 ## 4. Cookies
 
-This website does not use cookies.
+We do not set any cookies ourselves. Cloudflare may set strictly necessary security cookies, such as `__cf_bm` or `cf_clearance`, to tell legitimate visitors apart from bots and to protect the site against abuse. These cookies are not used for tracking or advertising, and because they are strictly necessary they do not require consent. See [Cloudflare's cookie documentation](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/) for details.
 
 ## 5. Sharing and disclosure
 
 We do not sell, rent or trade personal data. We only share it:
 
-- with the service providers needed to run our services, such as the network providers that connect our servers to the internet, which may keep their own connection logs;
+- with the service providers needed to run our services: GitHub, which hosts this website, Cloudflare, which delivers and protects it, and the network providers that connect our servers to the internet, which may keep their own connection logs;
 - when required by law or by a valid order from a competent authority.
 
 ## 6. Where your data is stored
 
-Client data and data received through our contact form are stored exclusively in the European Union. Visitor data processed by GitHub when serving this website is covered by GitHub's own privacy statement.
+Client data and data received through our contact form are stored exclusively in the European Union. Cloudflare and GitHub operate global networks, so requests to this website and contact form submissions in transit may be processed outside the European Union, under the safeguards described in their respective privacy policies.
 
 ## 7. Data security
 
