@@ -9,11 +9,11 @@ description: How Cyberbits Labs Ltd. collects, uses and protects personal data.
 Last updated: 22 October 2026
 {: .muted}
 
-Privacy is central to what we do. This policy explains what personal data Cyberbits Labs Ltd. ("Cyberbits", "we", "us") collects, why, and how long we keep it. In short: we collect as little as possible, we never sell it, and client data stays in the European Union.
+Privacy is central to what we do. This policy explains what personal data {{ site.company }} ("we", "us") collects, why, and how long we keep it. In short: we collect as little as possible, we never sell it, and client data stays in the European Union.
 
 ## 1. Who we are
 
-Cyberbits Labs Ltd. is the data controller for the personal data described in this policy. For any privacy question or request, email us at [{{ site.email }}](mailto:{{ site.email }}).
+{{ site.company }} is the data controller for the personal data described in this policy. For any privacy question or request, email us at [{{ site.email }}](mailto:{{ site.email }}).
 
 ## 2. Information we collect
 

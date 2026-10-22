@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Terms of Service
-description: The general terms that apply to the Cyberbits website and services.
+description: The general terms that apply to the website and services of Cyberbits Labs Ltd.
 ---
 
 # Terms of Service
@@ -11,7 +11,7 @@ Last updated: 22 October 2026
 
 ## 1. About these terms
 
-These terms apply to your use of this website and to the technology consulting and hosting services provided by Cyberbits Labs Ltd. ("Cyberbits", "we", "us"). By using this website or our services, you agree to these terms.
+These terms apply to your use of this website and to the technology consulting and hosting services provided by {{ site.company }} ("we", "us"). By using this website or our services, you agree to these terms.
 
 Each engagement is governed by its own written agreement or accepted proposal. Where that agreement differs from these terms, the agreement takes precedence.
 
@@ -45,7 +45,7 @@ We handle personal data as described in our [Privacy Policy](/legal/privacy). Cl
 
 ## 7. Intellectual property
 
-The content of this website, including text, graphics, logos and images, belongs to Cyberbits Labs Ltd. and is protected by copyright law. Content you host with us remains yours. Ownership of work we produce for you is set out in the agreement for that engagement.
+The content of this website, including text, graphics, logos and images, belongs to {{ site.company }} and is protected by copyright law. Content you host with us remains yours. Ownership of work we produce for you is set out in the agreement for that engagement.
 
 ## 8. Changes to our services
 

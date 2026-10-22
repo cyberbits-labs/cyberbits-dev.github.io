@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Cyberbits.dev
+title: Cyberbits Labs
 company: Cyberbits Labs Ltd.
 domain: cyberbits.dev
 url: "https://cyberbits.dev" # the base hostname & protocol for your site, e.g. http://example.com

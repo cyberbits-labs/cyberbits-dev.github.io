@@ -8,7 +8,7 @@ layout: default
       <span class="eyebrow">Independent technology consultancy &middot; Since 2018</span>
       <h1 class="display">Your technology, in trusted hands</h1>
       <p class="lead">
-        Cyberbits is a boutique consultancy for discerning individuals and growing businesses.
+        {{ site.title }} is a boutique consultancy for discerning individuals and growing businesses.
         You work directly with a senior engineer who knows your systems, answers your messages and takes responsibility. No call centres, no ticket queues.
       </p>
       <div class="actions">
@@ -30,7 +30,7 @@ layout: default
   <div class="wrap">
     <div class="section-head">
       <div>
-        <span class="eyebrow">Why Cyberbits</span>
+        <span class="eyebrow">Why {{ site.title }}</span>
         <h2 class="title">Expertise you can reach, discretion you can rely on</h2>
       </div>
     </div>
@@ -103,7 +103,7 @@ layout: default
       <h2 class="title">Deliberately small. Seriously experienced.</h2>
 
       <p>
-        Cyberbits Labs was founded in 2018 on a simple idea: the people who depend on technology most deserve an expert who knows them, not an anonymous support desk.
+        {{ site.title }} was founded in 2018 on a simple idea: the people who depend on technology most deserve an expert who knows them, not an anonymous support desk.
       </p>
 
       <p class="muted">
