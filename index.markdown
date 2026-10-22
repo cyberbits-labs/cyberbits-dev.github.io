@@ -81,6 +81,8 @@ layout: default
 
       {% include client-card.html domain="dcr.farm" description="A Decred Voting Service Provider, where reliability, security and uptime are non-negotiable." tags="blockchain,security,high-availability" %}
 
+      {% include client-card.html domain="cool.cash" description="AI-powered wealth management software tracking every major asset class, from stock indices, equities and forex to gold, real estate, Bitcoin and Brent crude. Currently in private alpha." tags="fintech,ai,wealth-management" %}
+
       {% include client-card.html domain="cyberbits.eu" description="Our own public infrastructure in Europe and Asia: package mirrors, an NTP server, an OpenPGP keyserver and a Tor relay, relied on by the open-source community." tags="in-house,open-source,europe-asia" %}
     </div>
   </div>

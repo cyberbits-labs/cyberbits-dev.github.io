@@ -707,7 +707,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 
 .clients {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -750,7 +750,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
   &:hover { border-color: var(--brass-light); color: var(--text); }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 760px) {
   .clients { grid-template-columns: 1fr; }
 }
 
