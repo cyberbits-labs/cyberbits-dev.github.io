@@ -8,8 +8,8 @@ layout: default
       <span class="eyebrow">Independent technology consultancy &middot; Since 2018</span>
       <h1 class="display">Your technology, in trusted hands</h1>
       <p class="lead">
-        {{ site.title }} is a boutique consultancy for discerning individuals and growing businesses.
-        You work directly with a senior engineer who knows your systems, answers your messages and takes responsibility. No call centres, no ticket queues.
+        {{ site.title }} helps growing businesses build and run reliable systems, and private clients secure their technology.
+        You work directly with a senior engineer on cloud infrastructure, custom software or a security and privacy review. No call centres, no ticket queues.
       </p>
       <div class="actions">
         <a class="btn" href="#contact">Start a conversation <span class="arrow">&rarr;</span></a>
@@ -38,11 +38,11 @@ layout: default
     <div class="pillars">
       <div class="pillar">
         <h3>A senior expert, directly</h3>
-        <p>One point of contact who knows your setup inside out. You never have to explain your problem twice, and you always know who is looking after you.</p>
+        <p>One point of contact who knows your setup inside out. You work with the engineer who does the work, so you never have to explain your problem twice.</p>
       </div>
       <div class="pillar">
         <h3>Discretion by default</h3>
-        <p>Privacy is not an add-on. Your data stays in Europe on infrastructure we operate ourselves, and every engagement is handled in strict confidence.</p>
+        <p>Privacy is not an add-on. Every engagement is handled in strict confidence, from your first message onwards.</p>
       </div>
       <div class="pillar">
         <h3>Built to last</h3>
@@ -63,9 +63,9 @@ layout: default
     </div>
 
     <div class="services">
-      {% include service-card.html id="consulting" link="/consulting" description="Independent advice and hands-on engineering: security and privacy for private clients, cloud infrastructure, scaling and custom software for businesses." %}
+      {% include service-card.html id="private clients" link="/consulting" description="Security and privacy reviews, personal infrastructure and a trusted second opinion, for entrepreneurs, families and family offices." %}
 
-      {% include service-card.html id="hosting" link="/hosting" description="Fast, private static hosting for tech-savvy users: deploy with rsync over SSH or TLS to our own battle-tested infrastructure, which serves terabytes of data every day." %}
+      {% include service-card.html id="businesses" link="/consulting" description="Cloud infrastructure, scaling, DevOps and custom software, for SMEs that need senior engineering without hiring a full-time team." %}
     </div>
   </div>
 </section>
@@ -77,7 +77,7 @@ layout: default
         <span class="eyebrow">Clients</span>
         <h2 class="title">Trusted for years</h2>
       </div>
-      <p class="lead">Our relationships are long-term by design. Some of the organisations and projects we have supported for years:</p>
+      <p class="lead">Some of the organisations and projects we have supported over the years:</p>
     </div>
 
     <div class="clients">
@@ -87,12 +87,32 @@ layout: default
 
       {% include client-card.html domain="cool.cash" description="AI-powered wealth management software tracking every major asset class, from stock indices, equities and forex to gold, real estate, Bitcoin and Brent crude. Currently in private alpha." tags="fintech,ai,wealth-management" %}
 
-      {% include client-card.html domain="cyberbits.eu" description="Our own public infrastructure in Europe and Asia: package mirrors, an NTP server, an OpenPGP keyserver and a Tor relay, relied on by the open-source community." tags="in-house,open-source,europe-asia" %}
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="infrastructure">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Infrastructure we operate</span>
+        <h2 class="title">Proof you can inspect</h2>
+      </div>
+      <p class="lead">Alongside our client work, we run public infrastructure for the open-source community in Europe and Asia.</p>
+    </div>
+    <p class="lead">
+      It puts our infrastructure experience into daily practice, and it is all public:
+      <a href="https://cyberbits.eu/" target="_blank" rel="noopener">explore what we run</a> or
+      <a href="https://status.{{ site.domain }}/" target="_blank" rel="noopener">check the live service status</a>.
+      Command-line users can also host with us there: see <a href="https://cyberbits.eu/#hosting" target="_blank" rel="noopener">static hosting on cyberbits.eu</a>.
+    </p>
+    <div class="actions">
+      <a class="btn" href="#contact">Start a conversation <span class="arrow">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ivory">
   <div class="wrap split">
     <div class="split__media">
       <img src="/assets/about-us.jpg" alt="" width="1080" height="769" loading="lazy">
@@ -108,7 +128,6 @@ layout: default
 
       <p class="muted">
         We have spent years designing and running infrastructure for businesses, decentralized services and Free&nbsp;Software projects, from points of presence in France and Thailand.
-        Our public mirrors, keyserver and Tor relay are used every day by the open-source community: the same infrastructure, and the same care, that our clients get.
         We bring the same rigour to every client, whether that means protecting a family's privacy or preparing a company to scale.
         We take on a limited number of clients so that each one gets our full attention.
       </p>
