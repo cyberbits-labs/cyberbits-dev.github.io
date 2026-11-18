@@ -184,13 +184,6 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
     &:hover { background: var(--brass-light); border-color: var(--brass-light); color: var(--ink); }
   }
 
-  &--outline-light {
-    background: transparent;
-    border-color: rgba(255, 255, 255, 0.4);
-    color: #fff;
-    &:hover { background: #fff; border-color: #fff; color: var(--ink); }
-  }
-
   .arrow { transition: transform 0.2s; }
   &:hover .arrow { transform: translateX(3px); }
 }
@@ -335,30 +328,6 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
   .hero__media img { aspect-ratio: 16 / 9; }
 }
 
-// Intro statement
-
-.statement {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: clamp(2rem, 6vw, 5rem);
-
-  &__body p {
-    font-family: var(--serif);
-    font-size: clamp(1.35rem, 2.4vw, 1.75rem);
-    line-height: 1.45;
-    color: var(--text);
-    margin-bottom: 1.75rem;
-  }
-
-  &__body p:last-child { margin-bottom: 0; }
-
-  a { text-decoration-color: var(--brass); }
-}
-
-@media (max-width: 760px) {
-  .statement { grid-template-columns: 1fr; }
-}
-
 // Section heading row
 
 .section-head {
@@ -438,27 +407,6 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 @media (max-width: 560px) {
   .hero__media, .split__media { display: none; }
 }
-
-// Feature grid (hosting)
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1.5rem, 3vw, 2.5rem);
-
-  .feature {
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--ink);
-
-    h3 { font-size: 1.6rem; margin-bottom: 0.75rem; }
-    p { color: var(--muted); font-size: 0.975rem; margin: 0; }
-  }
-}
-
-@media (max-width: 980px) { .features { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .features { grid-template-columns: 1fr; } }
-
-.highlight { color: var(--brass-light); }
 
 // Contact
 
@@ -857,111 +805,6 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 }
 
 .contact__note { color: var(--muted-dark); font-size: 0.95rem; margin: 2rem 0 0; }
-
-// Deployment (hosting)
-
-.deploy {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: clamp(2.5rem, 6vw, 5rem);
-  align-items: center;
-}
-
-.deploy > * { min-width: 0; }
-
-@media (max-width: 1100px) {
-  .deploy { grid-template-columns: 1fr; }
-}
-
-.checklist {
-  list-style: none;
-  margin: 2rem 0 0;
-  padding: 0;
-
-  li {
-    position: relative;
-    padding: 0.85rem 0 0.85rem 1.75rem;
-    border-top: 1px solid var(--line);
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 1.6rem;
-      width: 0.8rem;
-      height: 1px;
-      background: var(--brass);
-    }
-  }
-
-  strong { font-weight: 500; }
-}
-
-.terminal {
-  margin: 0;
-  background: var(--ink);
-  color: #e6e9ec;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 30px 60px -30px rgba(14, 19, 24, 0.45);
-
-  &__bar {
-    display: flex;
-    gap: 0.45rem;
-    padding: 0.9rem 1.1rem;
-    border-bottom: 1px solid var(--line-dark);
-
-    span { width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--ink-3); }
-  }
-
-  pre {
-    margin: 0;
-    padding: 1.5rem 1.5rem 1.25rem;
-    overflow-x: auto;
-    scrollbar-color: var(--ink-3) transparent;
-    font-size: 0.875rem;
-    line-height: 1.75;
-  }
-
-  code { font-size: inherit; }
-  .c { color: var(--muted-dark); }
-  .p { color: var(--brass-light); user-select: none; }
-
-  figcaption {
-    padding: 0 1.5rem 1.25rem;
-    font-size: 0.8125rem;
-    color: var(--muted-dark);
-  }
-}
-@media (max-width: 560px) {
-  .terminal pre { padding: 1.25rem 1rem 1rem; font-size: 0.7rem; }
-  .terminal figcaption { padding: 0 1rem 1rem; }
-}
-
-// Bespoke terms (hosting)
-
-.bespoke {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: clamp(2.5rem, 6vw, 5rem);
-  align-items: start;
-}
-
-@media (max-width: 920px) {
-  .bespoke { grid-template-columns: 1fr; }
-}
-
-.bespoke__notes { display: grid; gap: 1.5rem; }
-
-.note {
-  padding: clamp(1.75rem, 3vw, 2.25rem);
-  background: var(--ivory);
-  border: 1px solid var(--line);
-
-  h3 { font-size: 1.6rem; margin-bottom: 0.5rem; }
-  p { color: var(--muted); margin: 0; }
-  a { color: var(--text); }
-}
 
 @media (max-width: 560px) {
   .actions .btn { width: 100%; }
