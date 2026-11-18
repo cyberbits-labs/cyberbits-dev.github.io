@@ -92,22 +92,27 @@ layout: default
 </section>
 
 <section class="section" id="infrastructure">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">Infrastructure we operate</span>
-        <h2 class="title">Proof you can inspect</h2>
-      </div>
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Infrastructure we operate</span>
+      <h2 class="title">Proof you can inspect</h2>
+
       <p class="lead">Alongside our client work, we run public infrastructure for the open-source community in Europe and Asia.</p>
+
+      <p class="muted">
+        It puts our infrastructure experience into daily practice, and it is all public:
+        <a href="https://cyberbits.eu/" target="_blank" rel="noopener">explore what we run</a> or
+        <a href="https://status.{{ site.domain }}/" target="_blank" rel="noopener">check the live service status</a>.
+        Command-line users can also host with us there: see <a href="https://cyberbits.eu/#hosting" target="_blank" rel="noopener">static hosting on cyberbits.eu</a>.
+      </p>
+
+      <div class="actions">
+        <a class="btn" href="#contact">Start a conversation <span class="arrow">&rarr;</span></a>
+      </div>
     </div>
-    <p class="lead">
-      It puts our infrastructure experience into daily practice, and it is all public:
-      <a href="https://cyberbits.eu/" target="_blank" rel="noopener">explore what we run</a> or
-      <a href="https://status.{{ site.domain }}/" target="_blank" rel="noopener">check the live service status</a>.
-      Command-line users can also host with us there: see <a href="https://cyberbits.eu/#hosting" target="_blank" rel="noopener">static hosting on cyberbits.eu</a>.
-    </p>
-    <div class="actions">
-      <a class="btn" href="#contact">Start a conversation <span class="arrow">&rarr;</span></a>
+
+    <div class="split__media">
+      <img src="/assets/infrastructure.jpg" alt="" width="1080" height="864" loading="lazy">
     </div>
   </div>
 </section>
